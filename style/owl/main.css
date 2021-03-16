@@ -1,0 +1,144 @@
+
+:root {
+
+--vermelho: #E50914;
+--preta: #141414;
+
+}
+
+*{
+margin: 0;
+padding: 0%;
+box-sizing: border-box;
+
+}
+
+/* Elementos base  */
+
+/* Configurações do corpo do site, cor de fundo, fonte do texto  */
+body {
+
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    }
+    
+
+
+header .container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+ 
+}
+ /* Configurações do logo do Netflix */
+header .logo {
+margin-left: 5px;
+color: var(--vermelho);
+font-family: 'Arial Black', Times;
+font-size: 40px;
+}
+
+
+header nav a {
+
+text-decoration: none;
+color: #AAA;
+margin-right: 40px;
+
+}
+
+
+ /*   Efeito do botão NA ABA DE NAVEGAÇÃO  INICIO/SÉRIES/FILMES/ DOCUMENTARIOS QUANDO
+ PASSAR O MOUSE, AS LETRAS VÃO FICAR COM O EFEITO EM BRANCO*/  
+header nav a:hover {
+color: rgb(252, 252, 252);
+
+}
+
+ /*    filme principal*/
+
+ .filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url ('img/mini.jpg');
+
+    height:400px;
+    background-size:cover;
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+ 
+ /* Configuração da margem e dos botoes referente  */
+ .filme-principal .descricao {
+
+    margin-top: 5px;
+    margin-bottom: 40px; 
+
+ }
+
+ .filme-principal .titulo {
+
+    font-size: 70px; /* Tamanho do titulo "Lucifer */
+    font-family:'Trebuchet MS', Arial, sans-serif;   /* Fonte do titulo */
+ }
+
+.botao {
+
+ background-color: rgba(0,0,0,.50);
+ border:none;     
+ color: white;    /* Cor do botão */
+ padding: 15px 30px;
+ margin-right: 15px;
+ font-size: 15px;  /* Fonte do Assistir agora e mais informações */
+ cursor:pointer;
+ transition: .3s ease all;
+
+}
+  /*   Efeito do botão,  o botão é preto, mas quando passar o mouse sobre ele, ele vai ficar da cor branca */  
+.botao:hover{
+
+    background-color: rgb(253, 253, 253);    
+    color: black;
+}
+
+
+/*   5 pixels de margem  para a esquerda  */ 
+.botao i {
+margin-right: 5px; 
+
+}
+
+
+/*   400 pixels de margem  para a direita   */  
+.container {
+
+margin-left: 40px;    
+}
+
+
+
+.filme-principal .container{
+
+width: 70%;
+}
+
+.box-filme{
+
+height: 100%;
+width: 100%;
+display: block;
+
+}
+
+.carrossel-filmes {
+margin-top: 15px;
+
+}
